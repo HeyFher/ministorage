@@ -17,8 +17,10 @@ Inspirado en minimongo.
  */
 
 const Users = new Collection('users');
+```
 
 
+```javascript
 /**
  * Collection.insert(documento)
  *
@@ -47,8 +49,10 @@ Users.insert({
 
 // Dentro de la consola, al usar el método insert, se retornara el ID
 // del documento que se acaba de crear.
+```
 
 
+```javascript
 /**
  * Collection.find(nombre)
  *
@@ -62,8 +66,10 @@ Users.insert({
  */
 
 let User = Users.find('shsEd0A1as2');
+```
 
 
+```javascript
 /**
  * Collection.findIndex(nombre)
  *
@@ -77,10 +83,10 @@ let User = Users.find('shsEd0A1as2');
  */
 
 Users.findIndex('shsEd0A1as2');
+```
 
- >  6
 
-
+```javascript
 /**
  * Collection.findAll()
  *
@@ -90,10 +96,10 @@ Users.findIndex('shsEd0A1as2');
  */
 
 let allUsers = Users.findAll();
+```
 
->  [Object, Object, Object, Object ...]
 
-
+```javascript
 /**
  * Collection.update(nombre, documento)
  *
@@ -115,8 +121,10 @@ Users.update('shsEd0A1as2', {
   age: 21,
   country: 'México'
 });
+```
 
 
+```javascript
 /**
  * Collection.remove(nombre)
  *
@@ -129,8 +137,10 @@ Users.update('shsEd0A1as2', {
  */
 
 Users.remove('shsEd0A1as2');
+```
 
 
+```javascript
 /**
  * Collection.count()
  *
@@ -139,10 +149,10 @@ Users.remove('shsEd0A1as2');
  */
 
 Users.count();
+```
 
->  17
 
-
+```javascript
 /**
  * Collection.reset()
  *
@@ -151,6 +161,4 @@ Users.count();
  */
 
 Users.reset();
-</code>
-</pre>
 ```
