@@ -1,7 +1,9 @@
 # Ministorage
+##### v.0.0.1
 
 Almacena y gestiona pequeñas porciones de información dentro de localStorage.
 Inspirado en minimongo.
+
 
 
 ### new Collection(nombre)
@@ -14,11 +16,13 @@ Inspirado en minimongo.
  *
  * A R G U M E N T O S
  *   - nombre [String]
-   *     Nombre que recibirá la colección al crearse.
+ *     Nombre que recibirá la colección al crearse.
  */
 
 const Users = new Collection('users');
 ```
+
+
 
 ### Collection.insert(documento)
 ```javascript
@@ -52,6 +56,8 @@ Users.insert({
 // del documento que se acaba de crear.
 ```
 
+
+
 ### Collection.find(nombre)
 ```javascript
 /**
@@ -68,6 +74,8 @@ Users.insert({
 
 let User = Users.find('shsEd0A1as2');
 ```
+
+
 
 ### Collection.findIndex(nombre)
 ```javascript
@@ -86,6 +94,8 @@ let User = Users.find('shsEd0A1as2');
 Users.findIndex('shsEd0A1as2');
 ```
 
+
+
 ### Collection.findAll()
 ```javascript
 /**
@@ -98,6 +108,8 @@ Users.findIndex('shsEd0A1as2');
 
 let allUsers = Users.findAll();
 ```
+
+
 
 ### Collection.update(nombre, documento)
 ```javascript
@@ -124,6 +136,8 @@ Users.update('shsEd0A1as2', {
 });
 ```
 
+
+
 ### Collection.remove(nombre)
 ```javascript
 /**
@@ -140,6 +154,8 @@ Users.update('shsEd0A1as2', {
 Users.remove('shsEd0A1as2');
 ```
 
+
+
 ### Collection.count()
 ```javascript
 /**
@@ -151,6 +167,8 @@ Users.remove('shsEd0A1as2');
 
 Users.count();
 ```
+
+
 
 ### Collection.reset()
 ```javascript
