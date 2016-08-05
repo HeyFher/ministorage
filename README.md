@@ -4,6 +4,7 @@ Almacena y gestiona pequeñas porciones de información dentro de localStorage.
 Inspirado en minimongo.
 
 
+### new Collection(nombre)
 ```javascript
 /**
  *  new Collection(nombre)
@@ -19,7 +20,7 @@ Inspirado en minimongo.
 const Users = new Collection('users');
 ```
 
-
+### Collection.insert(documento)
 ```javascript
 /**
  * Collection.insert(documento)
@@ -51,7 +52,7 @@ Users.insert({
 // del documento que se acaba de crear.
 ```
 
-
+### Collection.find(nombre)
 ```javascript
 /**
  * Collection.find(nombre)
@@ -68,7 +69,7 @@ Users.insert({
 let User = Users.find('shsEd0A1as2');
 ```
 
-
+### Collection.findIndex(nombre)
 ```javascript
 /**
  * Collection.findIndex(nombre)
@@ -85,7 +86,7 @@ let User = Users.find('shsEd0A1as2');
 Users.findIndex('shsEd0A1as2');
 ```
 
-
+### Collection.findAll()
 ```javascript
 /**
  * Collection.findAll()
@@ -98,7 +99,7 @@ Users.findIndex('shsEd0A1as2');
 let allUsers = Users.findAll();
 ```
 
-
+### Collection.update(nombre, documento)
 ```javascript
 /**
  * Collection.update(nombre, documento)
@@ -123,7 +124,7 @@ Users.update('shsEd0A1as2', {
 });
 ```
 
-
+### Collection.remove(nombre)
 ```javascript
 /**
  * Collection.remove(nombre)
@@ -139,7 +140,7 @@ Users.update('shsEd0A1as2', {
 Users.remove('shsEd0A1as2');
 ```
 
-
+### Collection.count()
 ```javascript
 /**
  * Collection.count()
@@ -151,7 +152,7 @@ Users.remove('shsEd0A1as2');
 Users.count();
 ```
 
-
+### Collection.reset()
 ```javascript
 /**
  * Collection.reset()
