@@ -4,7 +4,8 @@
 Almacena y gestiona pequeñas porciones de información dentro de localStorage.
 Inspirado en minimongo.
 
-
+> Hola
+> hola
 
 ### new Collection(nombre)
 ```javascript
@@ -16,12 +17,11 @@ Inspirado en minimongo.
  *
  * A R G U M E N T O S
  *   - nombre [String]
- *     Nombre que recibirá la colección al crearse.
+ *     Nombre de la colección
  */
 
-// Cuando la instancia sea removida, la colección también 
-// lo será.
 var Users = new Collection('users');
+// Cuando la instancia sea removida la colección también lo será.
 ```
 
 
@@ -36,10 +36,10 @@ var Users = new Collection('users');
  *
  * A R G U M E N T O S
  *   - documento [Object]
- *     Almacena dentro de la colleción un objeto pasado por parametro.
+ *     Objeto a almacenar
  */
 
-const Users = new Collection('users');
+var Users = new Collection('users');
 
 Users.insert({
   username: 'Fer0910',
@@ -55,7 +55,7 @@ Users.insert({
 });
 
 // Dentro de la consola, al usar el método insert, se retornara el ID
-// del documento que se acaba de crear.
+// del documento que se creó.
 ```
 
 
@@ -67,11 +67,11 @@ Users.insert({
  *
  * D E S C R I P C I O N
  *    El método find retorna un objeto que coincida con el ID
- *    pasado por parametro.
+ *    pasado por argumento.
  *
  * A R G U M E N T O S
  *   - nombre [String]
- *     ID del documento que se quiere recuperar.
+ *     ID del documento
  */
 
 let User = Users.find('shsEd0A1as2');
@@ -90,7 +90,7 @@ let User = Users.find('shsEd0A1as2');
  *
  * A R G U M E N T O S
  *   - nombre [String]
- *     ID del documento que se quiere recuperar.
+ *     ID del documento
  */
 
 Users.findIndex('shsEd0A1as2');
@@ -104,11 +104,12 @@ Users.findIndex('shsEd0A1as2');
  * Collection.findAll()
  *
  * D E S C R I P C I O N
- *    El método findAll retorna un array de objetos con todo los
- *    documentos almacenados en la colección.
+ *    El método findAll retorna un array con todos los documentos
+ *    dentro de la colección.
  */
 
 let allUsers = Users.findAll();
+// [Object, Object, Object, Object, ...]
 ```
 
 
@@ -119,15 +120,14 @@ let allUsers = Users.findAll();
  * Collection.update(nombre, documento)
  *
  * D E S C R I P C I O N
- *    Remplaza el mismo documento por otro pasado como argumento
- *    dentro de la colección. El nuevo documento conservara el
+ *    Remplaza el documento que coincida con la ID. El nuevo documento conservara el
  *    mismo ID del documento anterior.
  *
  * A R G U M E N T O S
  *   - nombre [String]
- *     ID del documento que se quiere remover
+ *     ID del documento
  *   - documento [Object]
- *     Nuevo documento por el que se remplazara el anterior
+ *     Objeto que remplazara al anterior
  */
 
 Users.update('shsEd0A1as2', {
@@ -146,11 +146,11 @@ Users.update('shsEd0A1as2', {
  * Collection.remove(nombre)
  *
  * D E S C R I P C I O N
- *    Remueve un documento de la colección
+ *    Remueve un documento.
  *
  * A R G U M E N T O S
  *   - nombre [String]
- *     ID del documento que se quiere remover
+ *     ID del documento
  */
 
 Users.remove('shsEd0A1as2');
@@ -178,7 +178,7 @@ Users.count();
  * Collection.reset()
  *
  * D E S C R I P C I O N
- *    Reinicia la colección
+ *    Reinicia la colección.
  */
 
 Users.reset();
