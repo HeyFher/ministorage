@@ -19,7 +19,9 @@ Inspirado en minimongo.
  *     Nombre que recibirá la colección al crearse.
  */
 
-const Users = new Collection('users');
+// Cuando la instancia sea removida, la colección también 
+// lo será.
+var Users = new Collection('users');
 ```
 
 
