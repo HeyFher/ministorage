@@ -1,10 +1,14 @@
 # Ministorage
-### v0.0.1
-#### Almacena y gestiona pequeñas porciones de información dentro de localStorage. Inspirado en minimongo.
 
-> Los navegadores pueden almacenar datos de forma permanente usando cookies o Local Storage. Aunque estos datos sean permanentes de una sesión a otra, son locales al usuario actual (pero disponible entre las pestañas) y no se puede compartir de forma sencilla con otros usuarios.
+Almacena y gestiona pequeñas porciones de información dentro de localStorage. Inspirado en minimongo.
 
-Partiendo de lo anterior. Ministorage nos permite almacenar información de forma permanente en lado del client, ya sa para una aplicación TODO o simplemente almacenar el estado de un checkbox, Ministorage pretende facilitar esa tarea con una seríe de métodos que nos permitiran realizar operaciónes CRUD.
+Ministorage nos permite almacenar información de forma permanente en el lado del client, ya sa para una aplicación TODO o simplemente almacenar el estado de un checkbox, Ministorage pretende facilitar esa tarea con una seríe de métodos que nos permitiran realizar operaciónes CRUD.
+
+## Versión
+
+0.0.1
+
+## API
 
 ### new Collection(nombre)
 ```javascript
@@ -73,7 +77,7 @@ Users.insert({
  *     ID del documento
  */
 
-let User = Users.find('shsEd0A1as2');
+var User = Users.find('shsEd0A1as2');
 ```
 
 
