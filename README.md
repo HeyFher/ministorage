@@ -2,7 +2,7 @@
 
 Almacena y gestiona pequeñas porciones de información dentro de localStorage. Inspirado en minimongo.
 
-Ministorage nos permite almacenar información de forma permanente en el lado del client, ya sa para una aplicación TODO o simplemente almacenar el estado de un checkbox, Ministorage pretende facilitar esa tarea con una seríe de métodos que nos permitiran realizar operaciónes CRUD.
+LocalStorage nos permite almacenar información de forma permanente en el lado del client, ya sa para una aplicación TODO o simplemente almacenar el estado de un checkbox, Ministorage pretende facilitar esa tarea con una seríe de métodos que nos permitiran realizar operaciónes CRUD.
 
 ## Versión
 
